@@ -15,9 +15,9 @@ const createUser = function(){
     }
 }
 
-let emptyArray = Array.from({ length: 100 });
+const emptyArray = Array.from({ length: 100 });
 
-let users = emptyArray.map(() => createUser());
+const users = emptyArray.map(() => createUser());
 
 
 app.get('/users', (req, res) => {
