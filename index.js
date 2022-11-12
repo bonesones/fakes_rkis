@@ -15,11 +15,9 @@ const createUser = function(){
     }
 }
 
-let users = [];
+let emptyArray = Array.from({ length: 100 });
 
-Array.from({ length: 100 }).forEach(() => {
-    users.push(createUser())
-})
+let users = emptyArray.map(() => createUser());
 
 
 app.get('/users', (req, res) => {
