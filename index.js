@@ -26,6 +26,6 @@ app.get('/users', (req, res) => {
     res.send(users);
 })
 
-app.listen(3000, (suc, err) => {
+app.listen(3000, () => {
     console.log('started')
 })
